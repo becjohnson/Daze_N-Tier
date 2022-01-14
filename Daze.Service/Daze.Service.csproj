@@ -1,16 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Daze.Data\Daze.Data.csproj" />
-    <ProjectReference Include="..\Daze.Models\Daze.Models.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Daze.Data\Daze.Data.csproj" />
+		<ProjectReference Include="..\Daze.IServices\Daze.IServices.csproj" />
+		<ProjectReference Include="..\Daze.Models\Daze.Models.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>

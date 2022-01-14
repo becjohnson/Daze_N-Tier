@@ -1,0 +1,5 @@
+C:\Users\beaut\Desktop\Daze\Daze.IServices\obj\Debug\netcoreapp3.1\Daze.IServices.csproj.AssemblyReference.cache
+C:\Users\beaut\Desktop\Daze\Daze.IServices\obj\Debug\netcoreapp3.1\Daze.IServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beaut\Desktop\Daze\Daze.IServices\obj\Debug\netcoreapp3.1\Daze.IServices.AssemblyInfoInputs.cache
+C:\Users\beaut\Desktop\Daze\Daze.IServices\obj\Debug\netcoreapp3.1\Daze.IServices.AssemblyInfo.cs
+C:\Users\beaut\Desktop\Daze\Daze.IServices\obj\Debug\netcoreapp3.1\Daze.IServices.csproj.CoreCompileInputs.cache

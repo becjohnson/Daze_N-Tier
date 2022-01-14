@@ -1,19 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "d7pg2dMeXfc3SWdAtTdVOoqgfRdBOckaS73uQXzm+sXFRmfJ6tcAvCBBqktdz1ZvlnGdvPjSwokkw1fI0zsT6w==",
+  "dgSpecHash": "cKlfVJzbh5OSppokL3DidirtcDBQODZVJCTNt2qk1u2TQzR5AD0Qe41w9ibI8+ZuGDkEq6zRWcw84cX/WDYdTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\beaut\\Desktop\\Daze\\Daze.WebMVC\\Daze.WebMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.7\\microsoft.aspnet.mvc.5.2.7.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.7\\microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.21\\microsoft.aspnetcore.cryptography.internal.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.21\\microsoft.aspnetcore.cryptography.keyderivation.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.21\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.21.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.7\\microsoft.aspnetcore.hosting.2.2.7.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.0\\microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.21\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.21\\microsoft.aspnetcore.identity.ui.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
@@ -36,14 +46,20 @@
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.21\\microsoft.extensions.configuration.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.21\\microsoft.extensions.configuration.abstractions.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.21\\microsoft.extensions.configuration.binder.3.1.21.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\2.2.4\\microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\2.2.0\\microsoft.extensions.configuration.fileextensions.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.21\\microsoft.extensions.dependencyinjection.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.21\\microsoft.extensions.dependencyinjection.abstractions.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.21\\microsoft.extensions.fileproviders.abstractions.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.21\\microsoft.extensions.fileproviders.embedded.3.1.21.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\2.2.0\\microsoft.extensions.fileproviders.physical.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\2.2.0\\microsoft.extensions.filesystemglobbing.2.2.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.21\\microsoft.extensions.identity.core.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.21\\microsoft.extensions.identity.stores.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.logging\\3.1.21\\microsoft.extensions.logging.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.21\\microsoft.extensions.logging.abstractions.3.1.21.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.options\\3.1.21\\microsoft.extensions.options.3.1.21.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
@@ -52,6 +68,7 @@
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.5.0\\microsoft.identitymodel.protocols.5.5.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.5.0\\microsoft.identitymodel.protocols.openidconnect.5.5.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.5\\microsoft.visualstudio.web.codegeneration.3.1.5.nupkg.sha512",
@@ -62,6 +79,7 @@
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\3.1.5\\microsoft.visualstudio.web.codegeneration.templating.3.1.5.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\3.1.5\\microsoft.visualstudio.web.codegeneration.utils.3.1.5.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.5\\microsoft.visualstudio.web.codegenerators.mvc.3.1.5.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -88,7 +106,7 @@
     "C:\\Users\\beaut\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
-    "C:\\Users\\beaut\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
+    "C:\\Users\\beaut\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
@@ -175,5 +193,46 @@
     "C:\\Users\\beaut\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\beaut\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

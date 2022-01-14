@@ -1,5 +1,13 @@
+C:\Users\beaut\Desktop\Daze\Daze.Models\bin\Debug\netcoreapp3.1\Daze.Models.deps.json
+C:\Users\beaut\Desktop\Daze\Daze.Models\bin\Debug\netcoreapp3.1\Daze.Models.dll
+C:\Users\beaut\Desktop\Daze\Daze.Models\bin\Debug\netcoreapp3.1\Daze.Models.pdb
+C:\Users\beaut\Desktop\Daze\Daze.Models\bin\Debug\netcoreapp3.1\Daze.Data.dll
+C:\Users\beaut\Desktop\Daze\Daze.Models\bin\Debug\netcoreapp3.1\Daze.Data.pdb
 C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.csproj.AssemblyReference.cache
 C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.AssemblyInfoInputs.cache
 C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.AssemblyInfo.cs
 C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.csproj.CoreCompileInputs.cache
+C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.csproj.CopyComplete
+C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.dll
+C:\Users\beaut\Desktop\Daze\Daze.Models\obj\Debug\netcoreapp3.1\Daze.Models.pdb

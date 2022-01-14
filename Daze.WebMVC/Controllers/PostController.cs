@@ -1,7 +1,10 @@
-﻿using Daze.Models.Post;
+﻿using Daze.Data;
+using Daze.Models.Post;
 using Daze.Models.Post_Models;
 using Daze.Service;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,18 +15,21 @@ namespace Daze.WebMVC.Controllers
 {
     public class PostController : Controller
     {
+        private readonly IWebHostEnvironment webHost;
+        private readonly UserManager<ApplicationUser> _userManager;
         [Authorize]
         private PostService CreatePostService()
         {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new PostService(userId);
+            IWebHostEnvironment webhost = webHost;
+            UserManager<ApplicationUser> userManager = _userManager;
+            var userId = Guid.Parse(User.Identity.Name);
+            var service = new PostService(userId, webhost, userManager);
             return service;
         }
         // GET: Post
         public ActionResult Index()
         {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new PostService(userId);
+            var service = CreatePostService();
             var model = new PostListItem[0];
             return View(model);
         }
@@ -59,7 +65,6 @@ namespace Daze.WebMVC.Controllers
                 new PostEdit
                 {
                     PostId = detail.PostId,
-                    Title = detail.Title,
                     Content = detail.Content,
                 };
             return View(model);

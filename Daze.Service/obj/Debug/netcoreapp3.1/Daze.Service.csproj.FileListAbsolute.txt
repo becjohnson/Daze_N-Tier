@@ -1,10 +1,5 @@
-C:\Users\beaut\Desktop\Daze\Daze.Service\bin\Debug\netcoreapp3.1\Daze.Service.deps.json
-C:\Users\beaut\Desktop\Daze\Daze.Service\bin\Debug\netcoreapp3.1\Daze.Service.dll
-C:\Users\beaut\Desktop\Daze\Daze.Service\bin\Debug\netcoreapp3.1\Daze.Service.pdb
 C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.csproj.AssemblyReference.cache
 C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.AssemblyInfoInputs.cache
 C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.AssemblyInfo.cs
 C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.csproj.CoreCompileInputs.cache
-C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.dll
-C:\Users\beaut\Desktop\Daze\Daze.Service\obj\Debug\netcoreapp3.1\Daze.Service.pdb

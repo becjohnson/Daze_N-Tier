@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Daze.Models\Daze.Models.csproj" />
+  </ItemGroup>
+
+	
+	<ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	
+</Project>
