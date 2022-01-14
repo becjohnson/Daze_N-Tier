@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daze.WebMVC", "Daze.WebMVC\Daze.WebMVC.csproj", "{855AD482-78B3-407D-8289-58F613B25BC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daze.WebMVC", "Daze.WebMVC\Daze.WebMVC.csproj", "{855AD482-78B3-407D-8289-58F613B25BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daze.Data", "Daze.Data\Daze.Data.csproj", "{771715B4-9DEC-4EAD-8DAA-6BCE4C182B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daze.Data", "Daze.Data\Daze.Data.csproj", "{771715B4-9DEC-4EAD-8DAA-6BCE4C182B96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daze.Models", "Daze.Models\Daze.Models.csproj", "{D29C2928-C5D8-46B2-B866-74B32DD9C46A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daze.Models", "Daze.Models\Daze.Models.csproj", "{D29C2928-C5D8-46B2-B866-74B32DD9C46A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daze.Service", "Daze.Service\Daze.Service.csproj", "{5B10AB99-2FBA-433F-90CB-3F13006EDE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daze.Service", "Daze.Service\Daze.Service.csproj", "{5B10AB99-2FBA-433F-90CB-3F13006EDE86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daze.IService", "Daze.IService\Daze.IService.csproj", "{2F014792-CE43-48A5-B263-7F395E301CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5B10AB99-2FBA-433F-90CB-3F13006EDE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B10AB99-2FBA-433F-90CB-3F13006EDE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B10AB99-2FBA-433F-90CB-3F13006EDE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F014792-CE43-48A5-B263-7F395E301CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F014792-CE43-48A5-B263-7F395E301CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F014792-CE43-48A5-B263-7F395E301CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F014792-CE43-48A5-B263-7F395E301CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

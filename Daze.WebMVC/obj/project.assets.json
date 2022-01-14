@@ -2763,6 +2763,21 @@
         "runtime": {
           "bin/placeholder/Daze.Models.dll": {}
         }
+      },
+      "Daze.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Daze.Data": "1.0.0",
+          "Daze.Models": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.21"
+        },
+        "compile": {
+          "bin/placeholder/Daze.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Daze.Service.dll": {}
+        }
       }
     }
   },
@@ -8950,12 +8965,18 @@
       "type": "project",
       "path": "../Daze.Models/Daze.Models.csproj",
       "msbuildProject": "../Daze.Models/Daze.Models.csproj"
+    },
+    "Daze.Service/1.0.0": {
+      "type": "project",
+      "path": "../Daze.Service/Daze.Service.csproj",
+      "msbuildProject": "../Daze.Service/Daze.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Daze.Data >= 1.0.0",
       "Daze.Models >= 1.0.0",
+      "Daze.Service >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.21",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.21",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.21",
@@ -9004,6 +9025,9 @@
             },
             "C:\\Users\\beaut\\Desktop\\Daze\\Daze.Models\\Daze.Models.csproj": {
               "projectPath": "C:\\Users\\beaut\\Desktop\\Daze\\Daze.Models\\Daze.Models.csproj"
+            },
+            "C:\\Users\\beaut\\Desktop\\Daze\\Daze.Service\\Daze.Service.csproj": {
+              "projectPath": "C:\\Users\\beaut\\Desktop\\Daze\\Daze.Service\\Daze.Service.csproj"
             }
           }
         }

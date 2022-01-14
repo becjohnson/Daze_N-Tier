@@ -10,7 +10,7 @@ namespace Daze.Data
     public class ApplicationUser : IdentityUser
     {
         [Key]
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         [MaxLength(256), Url]
         public string VanityUrl
         {

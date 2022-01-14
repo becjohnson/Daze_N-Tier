@@ -6,5 +6,6 @@ namespace Daze.Models.Profile_Models
 {
     public class ProfileDetails
     {
+
     }
 }

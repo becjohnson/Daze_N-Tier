@@ -12,5 +12,6 @@ namespace Daze.Data
         [ForeignKey("PostId")]
         public int PostId { get; set; }
         public virtual IEnumerable<Post> Posts { get; set; }
+        public Post Post { get; set; }
     }
 }

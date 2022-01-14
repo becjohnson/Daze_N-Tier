@@ -8,6 +8,8 @@ using System.IO;
 using Daze.WebMVC.Data;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using Daze.Models.Post;
 
 namespace Daze.Service
 {
@@ -24,38 +26,79 @@ namespace Daze.Service
             _userManager = userManager;
             dbContext = context;
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public bool CreatePost(PostCreate model)
         {
             string uniqueFileName = UploadedVideo(model);
             string uniqueFileName2 = UploadedImage(model);
-            string uniqueFileName3 = UploadedAudio(model);
-            string hashtags = Hashtagger(model.Content);
-            int hashlength = HashTagLength(model.Content);
-            int hashindex = HashTagIndexer(model.Content);
-            int hashcount = HashTagCounter(model.Content);
+            List<string> hashTags = Hashtagger(model.Content);
             var user = _userManager.FindByNameAsync(User.Identity.Name).Result;
-            HashTag hashTag = new HashTag {Tag = hashtags};
+            HashTag hashTag = new HashTag { Tag = string.Join(",", hashTags.Select(s => s.Substring(0)).Distinct()) };
             dbContext.HashTags.Add(hashTag);
+            var entity =
+            new Post
+            {
+                OwnerId = _userId,
+                UserName = user.UserName,
+                ProfilePicture = user.ProfilePicture,
+                Alt = model.Alt,
+                GreyScale = model.GreyScale,
+                Brightness = model.Brightness,
+                Contrast = model.Contrast,
+                Saturation = model.Saturation,
+                Content = model.Content,
+                CreatedUtc = DateTimeOffset.Now,
+                Video = uniqueFileName,
+                Image = uniqueFileName2,
+            };
+            dbContext.Posts.Add(entity);
+            return dbContext.SaveChanges() == 2;
+        }
+        public PostDetail GetPostById(int id)
+        {
+            var user = _userManager.FindByNameAsync(User.Identity.Name).Result;
+            Post post =
+            dbContext
+            .Posts
+            .Single(e => e.PostId == id);
+            var entity =
+                        dbContext
+                        .Posts
+                        .Single(e => e.PostId == id);
+            return
+            new PostDetail
+            {
+                OwnerId = _userId,
+                UserName = entity.UserName,
+                Alt = entity.Alt,
+                ProfilePictureLocation = user.ProfilePicture,
+                GreyScale = entity.GreyScale,
+                Brightness = entity.Brightness,
+                Contrast = entity.Contrast,
+                Saturation = entity.Saturation,
+                Content = entity.Content,
+                CreatedUtc = DateTimeOffset.Now,
+                VideoLocation = post.Video,
+                ImageLocation = post.Image,
+            };
+        }
+        public bool UpdatePost(PostEdit model)
+        {
                 var entity =
-                new Post
-                {
-                    UserId = _userId,
-                    Alt = model.Alt,
-                    GreyScale = model.GreyScale,
-                    Brightness = model.Brightness,
-                    Contrast = model.Contrast,
-                    Saturation = model.Saturation,
-                    Content = model.Content,
-                    Tag = 
-                    CreatedUtc = DateTimeOffset.Now,
-                    Image = uniqueFileName2,
-                    Video = uniqueFileName3,
-                    UserName = user.UserName,
-                };
-                dbContext.Posts.Add(entity);
-                return dbContext.SaveChanges() == 2;
+                        dbContext
+                        .Posts
+                        .Single(e => e.PostId == model.PostId && e.OwnerId == _userId);
+                entity.Content = model.Content;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                return dbContext.SaveChanges() == 1;
+        }
+        public bool DeletePost(int id)
+        {
+                var entity =
+                        dbContext
+                        .Posts
+                        .Single(e => e.PostId == id && e.OwnerId == _userId);
+                dbContext.Posts.Remove(entity);
+                return dbContext.SaveChanges() == 1;
         }
         private string UploadedVideo(PostCreate model)
         {
@@ -85,68 +128,12 @@ namespace Daze.Service
             }
             return uniqueFileName2;
         }
-        public string Hashtagger(string content)
+        public List<string> Hashtagger(string content)
         {
-            int maxtags = 10;
             var rx = new Regex("#+[a-zA-Z0-9(_)]{1,}", RegexOptions.Compiled);
             MatchCollection matches = rx.Matches(content);
-            if (matches != null && matches.Count == 1)
-            {
-                return matches[0].Value;
-            }
-            else
-            if (matches != null && matches.Count == 2)
-            {
-                return $"{matches[0].Value} {matches[1].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 3)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 4)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 5)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 6)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value} {matches[5].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 7)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value} {matches[5].Value} {matches[6].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 8)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value} {matches[5].Value} {matches[6].Value} {matches[7].Value}";
-            }
-            else
-            if (matches != null && matches.Count == 9)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value} {matches[5].Value} {matches[6].Value} {matches[7].Value} {matches[8].Value}";
-            }
-            else
-            if (matches != null && matches.Count == maxtags)
-            {
-                return $"{matches[0].Value} {matches[1].Value} {matches[2].Value} {matches[3].Value} {matches[4].Value} {matches[5].Value} {matches[6].Value} {matches[7].Value} {matches[8].Value} {matches[9].Value}";
-            }
-            else
-            if (matches != null && matches.Count > maxtags)
-            {
-                ValidationProblemDetails problemDetails = new ValidationProblemDetails();
-                return problemDetails.Detail = "Please limit hashtags t0 10";
-            }
-            else
-                return "";
+            var list = matches.Cast<Match>().Select(match => match.Value).ToList();
+            return list;
         }
     }
 }

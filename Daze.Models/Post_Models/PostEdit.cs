@@ -6,8 +6,9 @@ using System.Text;
 
 namespace Daze.Models.Post
 {
-    class PostEdit
+    public class PostEdit
     {
+        public int PostId { get; set; }
         public string Content { get; set; }
         public int Brightness { get; set; }
         public int Contrast { get; set; }

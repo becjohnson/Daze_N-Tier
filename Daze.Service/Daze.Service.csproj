@@ -11,7 +11,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Daze.Data\Daze.Data.csproj" />
     <ProjectReference Include="..\Daze.Models\Daze.Models.csproj" />
-    <ProjectReference Include="..\Daze.WebMVC\Daze.WebMVC.csproj" />
   </ItemGroup>
 
 </Project>

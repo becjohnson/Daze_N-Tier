@@ -9,6 +9,7 @@ namespace Daze.Data
     {
         [Key]
         public int PostId { get; set; }
+        public Guid OwnerId { get; set; }
         public string Content { get; set; }
         public int Brightness { get; set; }
         public int Contrast { get; set; }
@@ -21,7 +22,7 @@ namespace Daze.Data
         public string Video { get; set; }
 
         [ForeignKey("UserId")]
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string UserName { get; set; }
         public string ProfilePicture { get; set; }
         public ApplicationUser User { get; set; }

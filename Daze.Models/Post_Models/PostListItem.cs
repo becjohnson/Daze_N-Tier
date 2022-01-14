@@ -12,6 +12,7 @@ namespace Daze.Models.Post
         //Instagram doesn't show comments, they show content as a comment instead to give the illusion of comments.
         //Show comments in post detail
         public int PostId { get; set; }
+        public Guid OwnerId { get; set; }
         public string Content { get; set; }
         public int Brightness { get; set; }
         public int Contrast { get; set; }
@@ -20,11 +21,10 @@ namespace Daze.Models.Post
         public string Alt { get; set; }
         public virtual IEnumerable<HashTag> HashTags { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
-        public IFormFile Image { get; set; }
-        public IFormFile Video { get; set; }
+        public string Image { get; set; }
+        public string Video { get; set; }
         public Guid UserId { get; set; }
         public string UserName { get; set; }
-        public string ProfilePicture { get; set; }
         public ApplicationUser User { get; set; }
     }
 }
